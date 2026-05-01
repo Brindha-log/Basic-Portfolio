@@ -1,0 +1,242 @@
+/* reset default browser spacing*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(36, 17, 99);
+    color: rgb(36, 17, 99);
+}
+
+section {
+    padding: 30px;
+    border-bottom: 1px solid rgb(185, 215, 234);
+}
+
+h1 {
+    color: aliceblue;
+}
+
+h2 {
+    color: rgb(36, 17, 99);
+}
+
+h3 {
+    color: rgb(36, 17, 99);
+}
+
+#hero {
+    background-color: aliceblue;
+    margin: 20px;
+    border-radius: 15px; 
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-around;
+    min-height: 80vh; 
+    padding: 40px;
+    padding-top: 80px;
+    margin-top: 100px;
+    border: none; /
+}
+
+header {
+   position: fixed;       
+    top: 0;               
+    left: 0;               
+    width: 100%;           
+    z-index: 1000;         
+    background-color: rgb(36, 17, 99); 
+    box-shadow: 0 2px 10px rgba(0,0,0,1);
+}
+
+.section {
+    padding: 50px;
+}
+
+span {
+    display: block;
+    padding: 10px;
+}
+
+#about {
+    background-color: aliceblue;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    margin: 20px;
+    border: 2px solid aliceblue;
+}
+
+#education {
+    background-color: aliceblue;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    margin: 20px;
+    border: 2px solid aliceblue;
+}
+
+#skills{
+    background-color: aliceblue;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    margin: 20px;
+    border: 2px solid aliceblue;
+}
+
+#projects{
+    background-color: aliceblue;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    margin: 20px;
+    border: 2px solid aliceblue;
+    display: flex;
+    gap: 20px;
+}
+
+#contact{
+    background-color: aliceblue;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    margin: 20px;
+    border: 2px solid aliceblue;
+}
+footer{
+    color: aliceblue;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 10px 50px;             
+    background-color: rgb(36, 17, 99);
+}
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 60vh;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: rgb(36, 17, 99);
+}
+
+.hero span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: rgb(64, 44, 137);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 1s, background-color 0.2s;
+}
+
+img {
+    width: 300px;             
+    height: 300px;
+    border-radius: 50%; 
+    border: 5px solid rgb(64, 44, 137);
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 30px;                    
+    list-style: none;            
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue; /* Ensures they match your header text */
+}
+
+nav ul li a:hover {
+    color: #b9d7ea;
+    transition: 0.3s;
+}
+
+/* --- Media Query for Mobile Devices (max-width: 768px) --- */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Stack the Nav Bar */
+    nav {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap; /* Allows links to wrap to a second line if needed */
+    }
+
+    /* 2. Stack the Hero Section */
+    #hero {
+        flex-direction: column; /* Stack vertically */
+        height: auto;           /* Let the container grow with the content */
+        min-height: 100vh;      /* Ensure it fills the screen if content is short */
+        padding: 120px 20px 40px; /* Top padding (120px) accounts for fixed nav */
+        margin: 10px;           /* Slightly smaller margins for small screens */
+        justify-content: center;
+        gap: 40px;              /* Space between image and text */
+    }
+
+    .hero-text {
+        order: 2;               /* Moves text below the image */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    /* Centers the button and span */
+    }
+
+    .hero-image {
+        order: 1;               /* Moves image to the top */
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;      /* Prevents text from being too large */
+        line-height: 1.2;
+    }
+
+    img {
+        width: 180px;           /* Slightly smaller for mobile */
+        height: 180px;
+    }
+
+    /* 4. Fix Project Cards */
+    #projects {
+        flex-direction: column; /* Stacks the two project articles */
+        align-items: center;
+    }
+
+    #projects span {
+        width: 100%;
+    }
+
+    /* 5. Clean up padding for all sections */
+    .section {
+        padding: 30px 15px;
+    }
+}

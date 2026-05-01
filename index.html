@@ -1,55 +1,107 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brindha's Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <main>
 
+        <!--header-->
+        <header>
+            <nav>
+                <h1>Brindha's portfolio</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
         <!--main content-->
-        <section id="hero">
-            <h2>Brindha Loganathan</h2>
-            <p>Aspiring Full Stack Developer</p>
-            <button>View My Work</button>
-            <img src="./assets/employee-female-worker-icon-blue-color-design_996135-39142.avif" width="300px" alt="my profile pic">
+        <section id="hero" class="section hero">
+            <div class="hero-text">
+                <h2>Hi, I'm Brindha Loganathan</h2>
+                <span class="role">Aspiring Full Stack Developer</span>
+                <button class="cta-button">View My Work</button>
+            </div>
+
+            <div class="hero-image">
+                <img src="./assets/employee-female-worker-icon-blue-color-design_996135-39142.avif"
+                    alt="my profile pic">
+            </div>
         </section>
 
         <!--About-->
-        <section id="about">
-            <h3>About Me</h3>
+        <section id="about" class="section about">
+            <h2>About Me</h2>
             <p>I am an Aspiring Full Stack developer to build scalable and efficient applicatons.</p>
         </section>
 
+        <!--Education-->
+        <section id="education" class="section education">
+            <h2>Education</h2>
+            <ul>
+                <li style="font-weight: bold;">B-Tech</li>
+                <p>Baba Institute of technology and sciences</p>
+                <li style="font-weight: bold;">Intermediate</li>
+                <p>Kakatiya Public School</p>
+                <li style="font-weight: bold;">SSC</li>
+                <p>SR Digi School</p>
+            </ul>
+        </section>
+
         <!--skills-->
-        <section id="skills">
-         <h3>My Skills</h3>
-            <ol>
-            <li>Frontend skills</li>
-            <li>Git and Git hub</li>
-            <li>C programming</li>
-         </ol>
+        <section id="skills" class="section skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>Frontend skills</li>
+                <li>Git and Git hub</li>
+                <li>C programming</li>
+            </ul>
         </section>
 
         <!--projects-->
-        <section id="projects">
+        <section id="projects" class="section projects">
             <h2>My Projects</h2>
-            <article>
-            <h3>1. E-Commerce Website</h3>
-            <p>Built a responsive E-Commerce Website using html,css and javascript.</p>
-            </article>
+            <span>
+                <article>
+                    <h4>1. E-Commerce Website</h4>
+                    <p>Built a responsive E-Commerce Website using html,css and javascript.</p>
+                    <ul>
+                        <li>Displayed Products dynamically and implemented basic search functionality.</li>
+                        <li>Added Cart features like add and remove items using Javascript.</li>
+                        <li>Used local Storage to save cart data even after page refresh.</li>
+                    </ul>
+                </article>
+            </span>
 
-            <article>
-            <h3>1. Sales Dashboard</h3>
-            <p>Created a Sales Dashboard using Excell to visualize data.</p>
-            </article>
+            <span>
+                <article>
+                    <h4>1. Sales Dashboard</h4>
+                    <p>Created a Sales Dashboard using Excell to visualize data.</p>
+                    <ul>
+                        <li>Used charts and formulas to track sales and revenue.</li>
+                        <li>Orgaized data clearly for easy understanding and analysis.</li>
+                    </ul>
+                </article>
+            </span>
         </section>
 
         <!--contact-->
-        <section id="contact">
+        <section id="contact" class="section contact">
             <form>
+                <label>Name:</label>
                 <input type="text" placeholder="Your Name">
+                <label>Email:</label>
                 <input type="email" placeholder="Your Email">
+                <label>Message:</label>
                 <textarea placeholder="your msg"></textarea>
                 <button type="submit">Send</button>
             </form>
@@ -61,6 +113,7 @@
     <footer>
         <p>&copy ; 2026 brindha. </p>
     </footer>
-    
+
 </body>
+
 </html>
