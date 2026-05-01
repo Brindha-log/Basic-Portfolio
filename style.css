@@ -169,7 +169,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: aliceblue; /* Ensures they match your header text */
+    color: aliceblue; 
 }
 
 nav ul li a:hover {
@@ -177,10 +177,10 @@ nav ul li a:hover {
     transition: 0.3s;
 }
 
-/* --- Media Query for Mobile Devices (max-width: 768px) --- */
+
 @media screen and (max-width: 768px) {
     
-    /* 1. Stack the Nav Bar */
+   
     nav {
         flex-direction: column;
         padding: 15px;
@@ -189,45 +189,45 @@ nav ul li a:hover {
 
     nav ul {
         gap: 15px;
-        flex-wrap: wrap; /* Allows links to wrap to a second line if needed */
+        flex-wrap: wrap; /
     }
 
-    /* 2. Stack the Hero Section */
+    
     #hero {
-        flex-direction: column; /* Stack vertically */
-        height: auto;           /* Let the container grow with the content */
-        min-height: 100vh;      /* Ensure it fills the screen if content is short */
-        padding: 120px 20px 40px; /* Top padding (120px) accounts for fixed nav */
-        margin: 10px;           /* Slightly smaller margins for small screens */
+        flex-direction: column; 
+        height: auto;           
+        min-height: 100vh;      
+        padding: 120px 20px 40px; 
+        margin: 10px;           
         justify-content: center;
-        gap: 40px;              /* Space between image and text */
+        gap: 40px;              
     }
 
     .hero-text {
-        order: 2;               /* Moves text below the image */
+        order: 2;               
         text-align: center;
         display: flex;
         flex-direction: column;
-        align-items: center;    /* Centers the button and span */
+        align-items: center;    
     }
 
     .hero-image {
-        order: 1;               /* Moves image to the top */
+        order: 1;               
     }
 
     .hero h2 {
-        font-size: 1.8rem;      /* Prevents text from being too large */
+        font-size: 1.8rem;      
         line-height: 1.2;
     }
 
     img {
-        width: 180px;           /* Slightly smaller for mobile */
+        width: 180px;           
         height: 180px;
     }
 
-    /* 4. Fix Project Cards */
+    
     #projects {
-        flex-direction: column; /* Stacks the two project articles */
+        flex-direction: column; 
         align-items: center;
     }
 
@@ -235,7 +235,6 @@ nav ul li a:hover {
         width: 100%;
     }
 
-    /* 5. Clean up padding for all sections */
     .section {
         padding: 30px 15px;
     }
